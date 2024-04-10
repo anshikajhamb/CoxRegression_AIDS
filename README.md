@@ -26,6 +26,7 @@ Firstly, I want to determine if there's any meaningful censoring in my dataset. 
 Now, I have coded a time-independent version of treat so that I can compare the Kaplan Meier graphs of both versions of treat. I would hypothesise that the time-independent version (‘treat_any_1’ as coded in STATA) will overestimate the effect of treatment compared to control on time to AIDS diagnosis:
 
 ![alt text](Graph.png)
+![alt text](Graph2.png)
 
 
 
@@ -37,6 +38,8 @@ It is important to note that solely relying on visual representation is insuffic
 We shall also like to see if variable cd4 interacts with treat. In the context of AIDS which is caused by HIV, CD4 cells are particularly important. HIV targets and infects these cells, using them to replicate and spread throughout the body. As the virus multiplies, it gradually reduces the number of CD4 cells in the body. This depletion of CD4 cells undermines the immune system's ability to fight off infections and diseases, leading to the development of AIDS. Therefroe CD4 cell count is a key indicator of immune function in individuals infected with HIV. 
 
 
+![alt text](Graph3.png)
+![alt text](Graph4.png)
 
 
 
@@ -48,6 +51,8 @@ We've observed a significant interaction over time involving the factors CD4, tr
 
 Residuals can be used to assess the PH assumption for continuous and categorical explanatory variables. We therefore perform Schoenfeld residual tests and notice a statistical significance, indicating that our cox model violates PH assumptions. Visual inspection too indicates that the lines are not constant over time:
 
+![alt text](Graph5.png)
+![alt text](Graph6.png)
 
 
 
