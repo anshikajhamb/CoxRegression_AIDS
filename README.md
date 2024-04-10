@@ -1,3 +1,5 @@
+simulated dataset from:https://github.com/cran/FLIM/blob/master/man/CD4sim.Rd
+
 # CoxRegression_AIDS
 **Just a heads-up, I'm new to survival analysis myself, so if I mess up the logic or reasoning, cut me some slack, alright? :) Please feel free to reach out should you wish to correct me, I am more than happy to learn from my mistakes! :) **
 
