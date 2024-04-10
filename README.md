@@ -6,7 +6,7 @@ Why is it important to test for proportionality of hazards before performing cox
 
 Time-dependent effects that change the hazard ratios over time distort the interpretation of the results and impact the validity of the conclusions drawn from the analysis. In Cox PH model, HR is averaged over all event times.Therefore, if hazard ratios are non-constant and  increase over time, estimates can be overestimated at the beginning and underestimated at the end. 
 
-In a study conducted in 1995, Altman and colleagues reviewed approximately 130 papers across five clinical oncology journals. They found that out of the 43 papers that utilised a Cox model, only 2 mentioned confirming the PH  assumption. Similarly, about a decade later, Mathoulin and colleagues evaluated the reporting quality of survival events in randomised clinical trials published in eight medical journals related to general or cancer medicine. They observed that among the 64 papers that used a Cox model, only one mentioned verifying the PH assumption. Not verifying PH assumptions when performing cox regression is a pressing matter in science. I shall attempt to demonstrate its implications by performing cox regression analysis on a simulated AIDS data with the following features:
+In a study conducted in 1995, Altman and colleagues reviewed approximately 130 papers across five clinical oncology journals. They found that out of the 43 papers that utilised a Cox model, only 2 mentioned confirming the PH  assumption. Similarly, about a decade later, Mathoulin and colleagues evaluated the reporting quality of survival events in randomised clinical trials published in eight medical journals related to general or cancer medicine**. They observed that among the 64 papers that used a Cox model, only one mentioned verifying the PH assumption. Not verifying PH assumptions when performing cox regression is a pressing matter in science. I shall attempt to demonstrate its implications by performing cox regression analysis on a simulated AIDS data with the following features:
 
 - `id`: Patient identifier
 - `time`: Time to event or censoring (in months)
@@ -53,6 +53,18 @@ Residuals can be used to assess the PH assumption for continuous and categorical
 
 ![alt text](Graph5.png)
 ![alt text](Graph6.png)
+
+
+
+References:
+
+**Bellera, C., MacGrogan, G., Debled, M., De Lara, C. T., Brouste, V., & Mathoulin‐Pélissier, S. (2010). Variables with time-varying effects and the Cox model: Some statistical concepts illustrated with a prognostic factor study in breast cancer. BMC Medical Research Methodology, 10(1). https://doi.org/10.1186/1471-2288-10-20
+
+Ayumi Shintani. (2014, February 21). Cox Proportional Hazard with Time Varying Covariate [Video]. YouTube. https://www.youtube.com/watch?v=aryYGsfAQsM
+
+Stata. (n.d.). power cox — Power analysis for the Cox proportional hazards model. https://www.stata.com/manuals15/psspowercox.pdf
+
+
 
 
 
