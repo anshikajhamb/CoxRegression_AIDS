@@ -25,6 +25,8 @@ Firstly, I want to determine if there's any meaningful censoring in my dataset. 
 
 Now, I have coded a time-independent version of treat so that I can compare the Kaplan Meier graphs of both versions of treat. I would hypothesise that the time-independent version (‘treat_any_1’ as coded in STATA) will overestimate the effect of treatment compared to control on time to AIDS diagnosis:
 
+![alt text](Graph.png)
+
 
 
 As can be seen, the difference in curves is wider when ‘treat’ is considered time-independent compared to time-dependent. Therefore, one would have inferred an overestimation and considered treatment to decelerate the time to AIDS diagnosis. However, in reality, that is not the case as can be seen in the second graph.
