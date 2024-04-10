@@ -47,7 +47,7 @@ Relationship between cd4 and treat seems to differ across time. Therefore, we sh
 
 We notice a significant interaction between treatment and CD4 count indicating that the impact of CD4 count on the risk of AIDS cannot be generalised across treatment statuses, i.e., the effect of CD4 count is effectively moderated by whether or not an individual is receiving treatment and that. Specifically, for each unit increase in CD4 count, the hazard of developing AIDS for those receiving treatment reduced by 20% compared to those not receiving treatment, adjusting for the CD4 count itself. However, we have assumed here that PH assumptions are not violated. Therefore, we will now introduce a constructed time-dependent variable, i.e, an interaction term that involves time to the Cox model, and test for its significance. 
 
-We've observed a significant interaction over time involving the factors CD4, treatment and interaction. This finding suggests that our PH  assumptions are not met, challenging the validity of our earlier analytical findings.
+We've observed a significant interaction over time involving the factors CD4, treatment and interaction. This finding suggests that our PH  assumptions are not met, that time-varying covarites indeed have a time-varying effect on the hazard, thereby, challenging the validity of our earlier analytical findings.
 
 Residuals can be used to assess the PH assumption for continuous and categorical explanatory variables. We therefore perform Schoenfeld residual tests and notice a statistical significance, indicating that our cox model violates PH assumptions. Visual inspection too indicates that the lines are not constant over time:
 
